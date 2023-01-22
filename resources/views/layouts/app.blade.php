@@ -13,7 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans bg-gray-background text-gray-900 text-sm">
+    <body class="font-sans grayBackground text-gray-900 text-sm" style="background: #f7f8fc">
         <header class="flex items-center justify-between px-8 py-4">
             <a href="#">
                 <img src="{{ asset('img/logo.svg') }}">
@@ -45,5 +45,27 @@
                 </a>
             </div>
         </header>
+
+    <main class="container mx-auto max-w-custom flex">
+        <div class="w-70 mr-5 line-clamp-3">add idea Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magnam nemo neque nobis sunt! Amet, beatae delectus distinctio eveniet exercitationem expedita libero odit officiis perferendis praesentium quos rerum similique voluptatem.</div>
+        <div class="w-175">
+            <nav class="flex items-center justify-between text-xs">
+                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                    <li><a href="" class="border-b-4 pb-3 border-blue">All Ideas (87)</a></li>
+                    <li><a href="" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Considering (6)</a></li>
+                    <li><a href="" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">In Process (1)</a></li>
+                </ul>
+
+                <ul class="flex uppercase font-semibold border-b-4 pb-3 space-x-10">
+                    <li><a href="" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Implemented (10)</a></li>
+                    <li><a href="" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">Closed (55)</a></li>
+                </ul>
+            </nav>
+
+            <div class="mt-8">
+                {{$slot}}
+            </div>
+        </div>
+    </main>
     </body>
 </html>
