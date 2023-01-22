@@ -10,21 +10,22 @@ module.exports = {
     ],
 
     theme: {
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.neutral,
+            'gray-background': '#f7f8fc',
+            'blue': '#328af1',
+            'blue-hover': '#2879bd',
+            'yallow': '#ffc73c',
+            'red': '#ec454f',
+            'green': '#1aab8b',
+            'purple': '#8b60ed',
+        },
         extend: {
-            colors: {
-                transparent: 'transparent',
-                current: 'currentColor',
-                black: colors.black,
-                white: colors.white,
-                gray: colors.neutral,
-                'grayBackground': '#f7f8fc',
-                'blue': '#328af1',
-                'blue-hover': '#2879bd',
-                'yallow': '#ffc73c',
-                'red': '#ec454f',
-                'green': '#1aab8b',
-                'purple': '#8b60ed',
-            },
+
             spacing: {
                 44: '11rem',
                 70: '17.5rem',

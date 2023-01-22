@@ -13,7 +13,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans grayBackground text-gray-900 text-sm" style="background: #f7f8fc">
+    <body class="font-sans bg-gray-background text-gray-900 text-sm">
         <header class="flex items-center justify-between px-8 py-4">
             <a href="#">
                 <img src="{{ asset('img/logo.svg') }}">
